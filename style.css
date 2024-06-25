@@ -141,7 +141,7 @@ body {
 
 .text-overlay .text-center {
   position: absolute; /* Position text absolutely within the container */
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the text */
   color: white; /* White text color for readability */
