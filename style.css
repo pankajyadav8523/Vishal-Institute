@@ -1,0 +1,187 @@
+/* Custom styles for the navbar */
+.navbar-nav .nav-link:hover {
+    background-color: #d8cc1e;
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e9c13c;
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 30px;
+}
+
+.navbar-nav .nav-item:first-child {
+    margin-left: 30px;
+}
+
+.navbar-brand {
+    color: white;
+    
+}
+
+.navbar-brand:hover{
+    color: white;
+    background-color: #d8cc1e;
+}
+
+.nav-link.dropdown-toggle {
+    color: antiquewhite;
+}
+
+.navbar-nav .nav-link.active {
+    color: antiquewhite;
+}
+
+.image {
+    background-image: url('./Assets/image-5.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh; /* Set the height as desired */
+    position: relative; /* Ensure the text can be positioned absolutely within this container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.container-fluid {
+    padding: 0; /* Remove default padding */
+}
+.btn-primary a {
+    color: white;
+    text-decoration: none;
+}
+.btn-primary a:hover {
+    color: white;
+}
+.btn-custom {
+    padding: 12px 50px; /* Increase padding for larger button */
+    font-size: 1.25rem; /* Increase font size */
+}
+.team-img {
+    width: 100%;  /* Make sure the image width is responsive */
+    max-width: 150px;  /* Set a max width for the images */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center the images */
+    display: block;  /* Center the images in their container */
+}
+
+.footer {
+    background-color: #010e08fb;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer h2, 
+.footer h5, 
+.footer p, 
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer hr {
+    background-color: #fff;
+}
+
+.footer .footer-links .list-inline-item a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer .footer-links .list-inline-item a:hover {
+    color: #ddd;
+}
+.list-unstyled{
+    color: whitesmoke;
+}
+
+.icons > a{
+    border-radius: 12px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.welcome-message {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s, transform 1s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0; /* Ensure no margin causes overflow */
+}
+
+.text-overlay .text-center {
+    position: absolute; /* Position text absolutely within the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* White text color for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add text shadow for better readability */
+}
+
+.text-center h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.text-center p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.container-fluid > button{
+    background-color: #fff;
+}
+
+.accordion-button {
+    background-color: rgb(45, 196, 163); /* Change to your desired background color */
+    color: white; /* Change to your desired text color */
+}
+
+.accordion-button:hover {
+    background-color: #07162c; /* Optional: Change the background color on hover */
+}
+
+.live-update {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+.live-update h2 {
+    margin-bottom: 20px;
+}
+.live-update .card {
+    margin-bottom: 15px;
+}
+

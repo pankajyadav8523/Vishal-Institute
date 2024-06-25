@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Computer Technology</title>
+   
+</head>
+<body>
+    <body>
+
+    <!--Navbar Start-->
+
+    <div class="container-fluid image text-overlay">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid ms-2">
+                <a class="navbar-brand" href="#"><img src="./Assets/logo-removebg-preview.png" alt="photo" style="width: 150px; height: auto;"></a>
+                <button class="navbar-toggler" type="button" id="toggle" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                                The Institute
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Infrastructure</a></li>
+                                <li><a class="dropdown-item" href="#">Achievements</a></li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                                <li><a class="dropdown-item" href="#">Web Developing</a></li>
+                                <li><a class="dropdown-item" href="#">Typing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                                Admission
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Application-process.html">Admission Process</a></li>
+                                <li><a class="dropdown-item" href="Application-form.html">Application Form</a></li>
+                                <li><a class="dropdown-item" href="#">Fees Structure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center text-white blur">
+            <div class="welcome-message" id="welcomeMessage">
+                <h1 style="color: orange;">Welcome to the Vishal Computer Centre!</h1>
+            </div>
+            <p style="color:orange;">Your journey to mastering technology begins here</p>
+        </div>
+    </div>
+
+    <!--Navbar End-->
+
+    <script src="script.js"></script>
+
+    <!--Welcome Message Start-->
+
+    <div class="container-fluid border p-5 bg-secondary">
+        <div>
+            <h1>About Us</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p style="color: antiquewhite;">At Vishal Computer Center Coaching, we are committed to nurturing the next generation of computer professionals through our comprehensive programs and expert guidance. Whether you're a beginner looking to start your journey in the world of technology or an experienced professional aiming to enhance your skills, we have tailored courses to suit your needs.</p>
+                <button type="button" class="btn btn-primary btn-custom">
+                    <a href="#">Enroll Now</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Welcome Message End-->
+
+    <!--Live updates Start-->
+
+    <div class="container mb-2 my-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-success">Live Updates <span class="badge bg-secondary">New</span></h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-header">Total Students</div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="totalStudents">Loading...</h5>
+                                <p class="card-text">Total number of students enrolled in all courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-header">Long Courses</div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="longCourses">Loading...</h5>
+                                <p class="card-text">Students enrolled in long-term courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-info mb-3">
+                            <div class="card-header">Soft Skill Learning</div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="softSkillLearning">Loading...</h5>
+                                <p class="card-text">Students learning soft skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+
+    <!--Live updates End-->
+
+
+    <!--Top Courses Start-->
+    
+<div class="container-fluid border p-3">
+    <div class="row text-white mb-4" style="background-color: blueviolet;">
+        <div class="col-md text-center">
+            <h1>Top Courses</h1>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                O'LEVEL
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>The O'LEVEL course provides essential IT skills, covering IT tools, internet technology, and computer applications. It prepares you for roles like programmer and web developer. With hands-on training and industry-recognized certification, O'LEVEL enhances employability and lays a strong foundation for advanced IT studies.</p>
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ADCA
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The Advanced Diploma in Computer Applications (ADCA) offers in-depth knowledge in programming, web design, and database management. Ideal for aspiring IT professionals, it prepares you for careers in software development and system analysis with practical learning and real-world projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    DTP
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   <p>
+                    The Desktop Publishing (DTP) course teaches design principles, typography, and layout design using tools like Adobe InDesign and Photoshop. Ideal for aspiring graphic designers, it equips you with skills to create professional visual content for publishing and advertising industries.
+                   </p> 
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    PGDCA
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The Post Graduate Diploma in Computer Applications (PGDCA) covers software development, web technologies, and network management. It prepares graduates for advanced IT roles through practical sessions and projects, enhancing problem-solving skills and technical expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    CCC
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The Course on Computer Concepts (CCC) provides basic IT skills, covering computer hardware, software applications, and internet usage. It’s ideal for beginners seeking to enhance digital skills, offering hands-on practice to improve productivity and job prospects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    DFA
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The Diploma in Financial Accounting (DFA) covers financial accounting, taxation, and payroll. With training in Tally and QuickBooks, it prepares you for roles like accountant and financial analyst, enhancing your skills in managing financial records and compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    TALLY
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The TALLY course focuses on Tally ERP 9, teaching accounting fundamentals, inventory management, and GST. Ideal for accountants and business owners, it provides practical training to efficiently manage financial transactions and generate accurate reports.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    DCA
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        The Diploma in Computer Applications (DCA) covers MS Office, web design, and basic programming. Ideal for beginners, it prepares you for entry-level IT roles such as data entry operator and office assistant with hands-on training.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    BASIC
+                </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   <p>
+                    The BASIC course offers foundational computer skills, covering MS Office, internet usage, and basic troubleshooting. Perfect for beginners, it builds confidence and proficiency in everyday computer tasks, enhancing efficiency in personal and professional settings.
+                   </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!--Top Courses End-->
+
+    <!--Our Team start-->
+
+    <div class="container">
+        <div class="container my-3">
+            <div class="row text-white mb-4" style="background-color: blueviolet;">
+                <div class="col-md text-center">
+                    <h1>Our Team</h1>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/amit-singhal.webp" class="card-img-top team-img" alt="Amit Singhal">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Amit Singhal</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="https://en.wikipedia.org/wiki/Amit_Singhal" target= "_blank" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/sonika-thakral.webp" class="card-img-top team-img" alt="Sonika Thakral">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sonika Thakral</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/Shilpa-Amit-.webp" class="card-img-top team-img" alt="Shilpa Amit">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Shilpa Amit</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/pintu-lohar.webp" class="card-img-top team-img" alt="Pintu">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pintu</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/preeti-shukla.webp" class="card-img-top team-img" alt="Preeti Shukla">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Preeti Shukla</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card ms-5" style="width: 80%;">
+                        <img src="./Assets/yoram-singer.webp" class="card-img-top team-img" alt="Yoram Singer">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Yoram Singer</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary">For more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Our Team End-->
+
+    <!--Footer part Start-->
+
+    <footer class="footer p-5"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-3"> 
+                    <h2>Vishal Computer Center</h2> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>About Us</h5> 
+                    <p> 
+                        At Vishal Computer Center Coaching, we are committed to nurturing the next generation of computer professionals through our comprehensive programs and expert guidance. Whether you're a beginner looking to start your journey in the world of technology or an experienced professional aiming to enhance your skills, we have tailored courses to suit your needs.  
+                    </p> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>Contact Us</h5> 
+                    <ul class="list-unstyled"> 
+                        <li>Email : info@example.com</li> 
+                        <li>Phone : +919569416601</li> 
+                        <li>Address : Seeyar maud, near Krahkol bridge Gajpur Gorakhpur U.P (273413)</li> 
+                    </ul> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>Follow Us</h5> 
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"> 
+                                <img src="./Assets/facebook.png" style="width: 50px; height: auto;" alt="facebook"> 
+                            </a> 
+                        </div>
+                        <div class="col">
+                            <a href="#"> 
+                                <img src="./Assets/instagram.png" alt="instagram" style="width: 50px; height: auto;">
+                           </a> 
+                        </div>
+                        <div class="col">
+                            <a href="#"> 
+                                <img src="./Assets/linkedin.png" alt="Linkdin" style="width: 50px; height: auto;"> 
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#"> 
+                                <img src="./Assets/whatsapp.png" alt="Whatsapp" style="width: 50px; height: auto;">
+                           </a> 
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            <hr> 
+            <div class="row"> 
+                <div class="col-md-6"> 
+                    <p>© 2024 Vishal Computer Center. All rights reserved.</p> 
+                </div> 
+                <div class="col-md-6"> 
+                    <ul class="list-inline footer-links"> 
+                        <li class="list-inline-item"> 
+                            <a href="#" class="text-white"> 
+                                Privacy Policy 
+                            </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                            <a href="#" class="text-white"> 
+                                Terms of Service 
+                            </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                            <a href="#" class="text-white"> 
+                                Sitemap 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+
+    <!--Footer part End-->
+
+
+
+
+</body>
+</html>
