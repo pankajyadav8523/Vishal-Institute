@@ -9,24 +9,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Application Process</title>
-    <style>
-      .eligibility-section {
-        background-color: rgb(198, 240, 190);
-      }
-      .eligibility-title {
-        font-style: italic;
-      }
-      .centered-list {
-        text-align: center;
-      }
-      .centered-list ul {
-        display: inline-block;
-        text-align: left;
-        list-style-position: inside;
-        padding-left: 0; /* Removes default padding */
-      }
-    </style>
+    <title>Gallery Page</title>
   </head>
   <body>
     <!--Navbar Start-->
@@ -76,9 +59,7 @@
                   <li><a class="dropdown-item" href="#">About Us</a></li>
                   <li><a class="dropdown-item" href="#">Infrastructure</a></li>
                   <li><a class="dropdown-item" href="#">Achievements</a></li>
-                  <li>
-                    <a class="dropdown-item" href="Gallery.html">Gallery</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Gallery</a></li>
                   <li>
                     <a class="dropdown-item" href="#">Vision and Mission</a>
                   </li>
@@ -136,37 +117,53 @@
           </div>
         </div>
       </nav>
-    </div>
 
-    <!--Navbar End-->
-
-    <!--Eligibilty Admission Process Start-->
-
-    <div class="container-fluid p-3 eligibility-section">
-      <div class="text-center">
-        <h1 class="eligibility-title">Eligibility</h1>
-        <p>
-          When the admission is confirmed, the candidate has to submit the
-          necessary documents for verification. The list of documents is
-          mentioned below:
-        </p>
-      </div>
-      <div class="row p-3">
-        <div class="col-12 centered-list">
-          <ul>
-            <h3><li>Colored Passport size photo.</li></h3>
-            <h3><li>10th and 12th class Marksheet.</li></h3>
-            <h3><li>Scan copy of Aadhar Card.</li></h3>
-          </ul>
+      <div class="text-center text-white blur">
+        <div class="welcome-message" id="welcomeMessage">
+          <h1 style="color: orange">Welcome to the Vishal Computer Centre!</h1>
         </div>
       </div>
     </div>
 
-    <!--Eligibilty Admission Process End-->
+    <!--Navbar End-->
 
-    <!--Notifiaction Start-->
+    <!--Gallery Start-->
+    <div class="container-fluid">
+      <div
+        class="row text-white mb-4 my-4"
+        style="background-color: blueviolet"
+      >
+        <div class="col-md text-center">
+          <h1>Here is our Gallery Photo</h1>
+        </div>
+      </div>
 
-    <!--Notification End-->
+      <div class="container-fluid row">
+        <div class="col-md my-5">
+          <img src="./Assets/image-1.png" class="img-thumbnail" alt="photo" />
+        </div>
+        <div class="col-md my-5">
+          <img
+            src="./Assets/image-2-s.jpeg"
+            class="img-thumbnail"
+            alt="photo"
+          />
+        </div>
+        <div class="col-md my-5">
+          <img src="./Assets/image-3.jpeg" class="img-thumbnail" alt="photo" />
+        </div>
+      </div>
+
+      <div class="container-fluid row my-5">
+        <div class="col-md my-5">
+          <img src="./Assets/image-4.jpeg" class="img-thumbnail" alt="photo" />
+        </div>
+        <div class="col-md my-5">
+          <img src="./Assets/image-7.jpeg" class="img-thumbnail" alt="photo" />
+        </div>
+      </div>
+    </div>
+    <!--Gallery End-->
 
     <!--Footer part Start-->
 

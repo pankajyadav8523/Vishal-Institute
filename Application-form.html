@@ -88,7 +88,9 @@
                   <li><a class="dropdown-item" href="#">About Us</a></li>
                   <li><a class="dropdown-item" href="#">Infrastructure</a></li>
                   <li><a class="dropdown-item" href="#">Achievements</a></li>
-                  <li><a class="dropdown-item" href="#">Gallery</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Gallery.html">Gallery</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Vision and Mission</a>
                   </li>
@@ -148,62 +150,12 @@
 
     <!--Navbar End-->
 
-    <script>
-      async function handleSubmit(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const form = event.target;
-        const formData = new FormData(form);
-
-        const data = {};
-        formData.forEach((value, key) => {
-          data[key] = value;
-        });
-
-        try {
-          const response = await fetch("YOUR_SCRIPT_URL_HERE", {
-            method: "POST",
-            body: new URLSearchParams(data), // Sending URL-encoded data
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded", // Specify the content type
-            },
-          });
-
-          if (response.ok) {
-            const result = await response.text();
-            if (result === "Duplicate") {
-              alert("A form with these details has already been submitted.");
-            } else {
-              alert("Form submitted successfully!");
-              document.getElementById("registration-form").style.display =
-                "none";
-              document.getElementById("success-message").style.display =
-                "block";
-            }
-          } else {
-            alert("Failed to submit the form. Please try again.");
-          }
-        } catch (error) {
-          console.error("Error submitting form:", error);
-          alert(
-            "An error occurred while submitting the form. Please try again."
-          );
-        }
-      }
-
-      function resetForm() {
-        document.getElementById("registration-form").reset();
-        document.getElementById("registration-form").style.display = "block";
-        document.getElementById("success-message").style.display = "none";
-      }
-    </script>
-
     <!--Form Strat-->
 
     <div class="container mt-5 mb-5">
-      <div class="container-md form-container border">
+      <div class="container-md form-container border bg-secondary">
         <div class="container-md text-center">
-          <h1>Online Registration Form</h1>
+          <h1 style="color: orange">Online Registration Form</h1>
           <p>Users can fill out the form and register themselves.</p>
         </div>
 
@@ -279,7 +231,10 @@
             <label for="floatingState">State</label>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label"
+              style="color: #f8f9fa"
               >Query related</label
             >
             <textarea
@@ -292,21 +247,9 @@
             ></textarea>
           </div>
           <div class="text-center">
-            <button
-              type="submit"
-              class="btn btn-primary mb-3"
-              onclick="alert('Form submitted successfully!')"
-            >
-              Submit
-            </button>
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
           </div>
         </form>
-        <div id="success-message" class="text-center" style="display: none">
-          <p>Form submitted successfully!</p>
-          <button onclick="resetForm()" class="btn btn-secondary">
-            Fill Another Form
-          </button>
-        </div>
       </div>
     </div>
 
